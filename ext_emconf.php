@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'FamilieRedlich\\FileMetadataOverlayAspect\\' => 'Classes',
+            'Fr\\FileMetadataOverlayAspect\\' => 'Classes',
         ],
     ],
     'state' => 'stable',
