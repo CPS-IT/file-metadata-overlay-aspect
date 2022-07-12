@@ -1,5 +1,5 @@
 {
-    "name": "familie-redlich/file-metadata-overlay-aspect",
+    "name": "fr/file-metadata-overlay-aspect",
     "type": "typo3-cms-extension",
     "description": "Extend FileMetadataOverlayAspect to fix core  translation problem  forge.typo3.org issue 93025",
     "homepage": "https://www.familie-redlich.de/",
@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FamilieRedlich\\FileMetadataOverlayAspect\\": "Classes/"
+            "Fr\\FileMetadataOverlayAspect\\": "Classes/"
         }
     },
     "extra": {
