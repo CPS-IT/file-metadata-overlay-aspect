@@ -14,4 +14,3 @@ services:
         identifier: 'fr/file-metadata-overlay-aspect'
         method: 'frLanguageAndWorkspaceOverlay'
         event: TYPO3\CMS\Core\Resource\Event\EnrichFileMetaDataEvent
-        after: 'typo3-frontend/overlay'
