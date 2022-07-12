@@ -1,2 +1,5 @@
+2022-07-12         [RELEASE] Release of file_metadata_overlay_aspect 1.0.1 (Vladimir Falcon)
+2022-07-12 1586b9e Removed event listener configuration "after: 'typo3-frontend/overlay'" (Vladimir Falcon)
+
 2022-07-12         [RELEASE] Release of file_metadata_overlay_aspect 1.0.0 (Vladimir Falcon)
 2022-07-12 c78a670 Implemented FileMetadataOverlayAspect event listener (Vladimir Falcon)
