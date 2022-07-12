@@ -1,3 +1,6 @@
+2022-07-12         [RELEASE] Release of file_metadata_overlay_aspect 1.0.2 (Vladimir Falcon)
+2022-07-12 c773182 Set event listener configuration after: 'legacy-slot, typo3-frontend/overlay' (Vladimir Falcon)
+
 2022-07-12         [RELEASE] Release of file_metadata_overlay_aspect 1.0.1 (Vladimir Falcon)
 2022-07-12 1586b9e Removed event listener configuration "after: 'typo3-frontend/overlay'" (Vladimir Falcon)
 
