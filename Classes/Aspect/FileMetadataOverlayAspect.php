@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace Fr\FileMetadataOverlayAspect\Aspect;
 
-use PDO;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Context\LanguageAspect;
@@ -92,15 +91,15 @@ final class FileMetadataOverlayAspect
         $record = $queryBuilder
             ->select('*')
             ->from('sys_file_metadata')->where($queryBuilder->expr()->eq(
-            'l10n_parent',
-            $queryBuilder->createNamedParameter($parentUid, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
-        ), $queryBuilder->expr()->eq(
-            'sys_language_uid',
-            $queryBuilder->createNamedParameter($languageUid, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
-        ), $queryBuilder->expr()->eq(
-            't3ver_wsid',
-            $queryBuilder->createNamedParameter(0, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
-        ))->executeQuery()
+                'l10n_parent',
+                $queryBuilder->createNamedParameter($parentUid, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
+            ), $queryBuilder->expr()->eq(
+                'sys_language_uid',
+                $queryBuilder->createNamedParameter($languageUid, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
+            ), $queryBuilder->expr()->eq(
+                't3ver_wsid',
+                $queryBuilder->createNamedParameter(0, \TYPO3\CMS\Core\Database\Connection::PARAM_INT)
+            ))->executeQuery()
             ->fetchAssociative();
 
         if ($record) {
