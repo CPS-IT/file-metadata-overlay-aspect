@@ -20,5 +20,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Vladimir Falcon Piva',
     'author_email' => 'v.falcon@familie-redlich.de',
     'author_company' => 'familie redlich',
-    'version' => '1.1.0',
+    'version' => '2.0.0',
 ];
