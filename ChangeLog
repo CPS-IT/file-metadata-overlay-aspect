@@ -1,3 +1,7 @@
+2025-05-09         [RELEASE] Release of file-metadata-overlay-aspect 2.0.0 (Vladimir Falcón Piva)
+2025-03-20 015ba4c Refactor with php-cs fix (Vladimir Falcón Piva)
+2025-03-20 aa70d1a Refactor with rector. Functionality was not tested. (Vladimir Falcón Piva)
+
 2023-09-22         [RELEASE] Release of file-metadata-overlay-aspect 1.2.0 (Vladimir Falcon)
 2023-09-22 f8f24c7 Update documentation (Vladimir Falcon)
 2023-09-22 fc57a4f Included TYPO3 V-12 to list of requirements (Vladimir Falcon Piva)
