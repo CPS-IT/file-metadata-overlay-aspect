@@ -1,3 +1,6 @@
+2025-06-27         [RELEASE] Release of file-metadata-overlay-aspect 2.0.1 (Vladimir Falcón Piva)
+2025-06-27 24634d6 Deprecate FileMetadataOverlayAspect and update constructor to use dependency injection (Vladimir Falcón Piva)
+
 2025-05-09         [RELEASE] Release of file-metadata-overlay-aspect 2.0.0 (Vladimir Falcón Piva)
 2025-03-20 015ba4c Refactor with php-cs fix (Vladimir Falcón Piva)
 2025-03-20 aa70d1a Refactor with rector. Functionality was not tested. (Vladimir Falcón Piva)

@@ -28,9 +28,20 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * based on user or group configuration.
  *
  * Back ported from https://forge.typo3.org/issues/93025
+ * @deprecated
  */
 final class FileMetadataOverlayAspect
 {
+    public function __construct(
+        private ConnectionPool $connectionPool,
+        private Context $context
+    ) {
+        trigger_error(
+            'Teh error has been fixed in TYPO3 v13. The class ' . __CLASS__ . ' is deprecated and will be removed in TYPO3 v13.',
+            E_USER_DEPRECATED
+        );
+    }
+
     /**
      * Do translation and workspace overlay
      *
@@ -45,7 +56,6 @@ final class FileMetadataOverlayAspect
         ) {
             return;
         }
-
         $recordData = $event->getRecord();
 
         $this->getPageRepository()->versionOL('sys_file_metadata', $recordData);
@@ -85,7 +95,7 @@ final class FileMetadataOverlayAspect
 
     protected function findTranslationByFileUid(int $parentUid, int $languageUid): ?array
     {
-        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
+        $queryBuilder = $this->connectionPool
             ->getQueryBuilderForTable('sys_file_metadata');
         $queryBuilder->getRestrictions()->add(GeneralUtility::makeInstance(RootLevelRestriction::class));
         $record = $queryBuilder
@@ -111,7 +121,7 @@ final class FileMetadataOverlayAspect
 
     protected function getLanguageAspect(): LanguageAspect
     {
-        $context = GeneralUtility::makeInstance(Context::class);
+        $context = $this->context;
         return $context->getAspect('language');
     }
 
